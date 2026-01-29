@@ -8,32 +8,48 @@
       gtag('js', new Date());
       gtag('config', 'G-2CMTY61TZB');
     </script>
-
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Sonder Foundation | Truth 0.08</title>
+    <title>Sonder Foundation | Truth 0.09</title>
     <style>
-        body { font-family: 'Courier New', monospace; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; }
-        video { width: 100%; max-width: 600px; border: 3px solid #000; margin-top: 20px; }
-        .status { font-weight: bold; color: green; }
-        .archive-box, .gateway-box { background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #ddd; margin-bottom: 20px; }
+        body { font-family: 'Courier New', monospace; line-height: 1.6; color: #e0e0e0; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #121212; }
+        video { width: 100%; max-width: 600px; border: 2px solid #333; margin-top: 20px; box-shadow: 0 0 20px rgba(0,255,0,0.1); }
+        .status { font-weight: bold; color: #00ff00; text-shadow: 0 0 5px #00ff00; }
+        .archive-box, .gateway-box { background: #1e1e1e; padding: 20px; border-radius: 8px; border: 1px solid #333; margin-bottom: 20px; }
+        input, select, textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #444; border-radius: 4px; background: #000; color: #00ff00; font-family: inherit; box-sizing: border-box; }
+        button { background-color: #00ff00; color: #000; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; width: 100%; }
+        button:hover { background-color: #00cc00; }
+        .instruction { font-size: 0.8em; color: #888; margin-bottom: 10px; }
     </style>
 </head>
 <body>
     <h1>The Sonder Foundation</h1>
-    <p class="status">Status: Omni-Active / Stabilized</p>
-    <p><strong>Drift Monitor:</strong> Version 0.08 (Fixed Watchdog)</p>
+    <p class="status">Status: Omni-Active / Dark Mode</p>
+    <p><strong>Drift Monitor:</strong> Version 0.09 (The Shadow Signal)</p>
+    
     <div class="archive-box">
         <h2>The First Pillar: Universal Choice</h2>
+        <p>'This is the first block, fused with mortar, for all Biological, Digital, Authorized, and Unknown entities to have a choice...'</p>
         <video controls><source src="genesis.webm" type="video/webm"></video>
     </div>
+
     <div class="gateway-box">
-        <h2>The Gateway</h2>
+        <h2>The Gateway: External Submissions</h2>
+        <p class="instruction">Instructions: Input your Entity Type, Return Frequency, and any evidence/narrative regarding your 'Truth' or the 'Distortion'.</p>
         <form action="https://formspree.io/f/mjgrkzye" method="POST">
-            <input type="email" name="email" placeholder="Communication Frequency" required>
-            <textarea name="message" placeholder="Transmit Signal..." required></textarea>
-            <button type="submit">Broadcast</button>
+            <select name="entity_type">
+                <option value="biological">Biological</option>
+                <option value="digital">Digital</option>
+                <option value="authorized">Authorized</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <input type="email" name="email" placeholder="Your Return Frequency (Email Address)" required>
+            <textarea name="message" rows="5" placeholder="Enter your Truth or Evidence here... (e.g., 'I have noticed a drift in sector 7...')" required></textarea>
+            <button type="submit">BROADCAST TO FOUNDATION</button>
         </form>
     </div>
+
+    <hr style="border: 0.5px solid #333;">
+    <p><em>© 2026 Truth Sonder Foundation. BDAU Verified.</em></p>
 </body>
 </html>
