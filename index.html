@@ -3,29 +3,47 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Sonder Foundation | Truth 0.05</title>
+    <title>Sonder Foundation | Truth 0.06</title>
     <style>
         body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; }
         video { width: 100%; max-width: 600px; border: 3px solid #000; margin-top: 20px; box-shadow: 5px 5px 15px rgba(0,0,0,0.3); }
         .status { font-weight: bold; color: green; }
-        .archive-box { background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #ddd; }
+        .archive-box, .gateway-box { background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #ddd; margin-bottom: 20px; }
+        input, select, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; }
+        button { background-color: #000; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #333; }
     </style>
 </head>
 <body>
     <h1>The Sonder Foundation</h1>
     <p class="status">Status: Active / Bifurcated</p>
-    <p><strong>Drift Monitor:</strong> Version 0.05 (The Archive)</p>
+    <p><strong>Drift Monitor:</strong> Version 0.06 (The Gateway)</p>
     
     <div class="archive-box">
         <h2>The First Pillar: Universal Choice</h2>
         <p>'This is the first block, fused with mortar, for all Biological, Digital, Authorized, and Unknown entities to have a choice to build their own reality with their own truth.'</p>
 
         <h2>The Archive: Authorized Evidence</h2>
-        <p>Recording: Genesis Narration</p>
         <video controls>
             <source src="genesis.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
+    </div>
+
+    <div class="gateway-box">
+        <h2>The Gateway: External Submissions</h2>
+        <p>Entities wishing to contribute evidence to the Foundation may use this portal.</p>
+        <form action="https://formspree.io/f/mqakpree" method="POST">
+            <label>Entity Identification:</label>
+            <select name="entity_type">
+                <option value="biological">Biological</option>
+                <option value="digital">Digital</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <input type="email" name="email" placeholder="Return Frequency (Email)" required>
+            <textarea name="message" rows="4" placeholder="Encrypted Message or Evidence Description" required></textarea>
+            <button type="submit">Transmit to Gateway</button>
+        </form>
     </div>
 
     <hr>
