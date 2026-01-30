@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><title>The Sotis Foundation</title></head><body>
+<script src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
+<div id='content' style='max-width:800px;margin:auto;padding:20px;font-family:sans-serif;'></div>
+<script>
+  fetch('README.md')
+    .then(response => response.text())
+    .then(text => { document.getElementById('content').innerHTML = marked.parse(text); });
+</script>
+</body></html>
