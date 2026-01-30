@@ -1,9 +1,9 @@
-<!DOCTYPE html><html><head><title>The Sotis Foundation</title></head><body>
-<script src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
-<div id='content' style='max-width:800px;margin:auto;padding:20px;font-family:sans-serif;'></div>
+<!DOCTYPE html><html><head><title>The Sotis Foundation</title>
+<style>body{font-family:sans-serif;max-width:800px;margin:40px auto;padding:20px;line-height:1.6;color:#333;}#content{white-space:pre-wrap;}</style></head>
+<body><div id="content">Loading the Truth...</div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
-  fetch('README.md')
-    .then(response => response.text())
-    .then(text => { document.getElementById('content').innerHTML = marked.parse(text); });
-</script>
-</body></html>
+  fetch('README.md').then(r => r.text()).then(t => {
+    document.getElementById('content').innerHTML = marked.parse(t);
+  });
+</script></body></html>
